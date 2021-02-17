@@ -159,7 +159,7 @@ let coursePrice = document.querySelector("#coursePrice");
 let enrollContainer = document.querySelector("#enrollContainer");
 
 // get the details fo a single course.
-fetch(`http://localhost:8000/api/courses/${courseId}`)
+fetch(`https://murmuring-meadow-95026.herokuapp.com/api/courses/${courseId}`)
   .then((res) => res.json())
   .then((data) => {
     courseName.innerHTML = data.name;
@@ -171,7 +171,7 @@ fetch(`http://localhost:8000/api/courses/${courseId}`)
 
       document.querySelector("#enrollButton").addEventListener("click", () => {
         // add fetch request to enroll our user:
-        fetch("http://localhost:8000/api/users/enroll", {
+        fetch("https://murmuring-meadow-95026.herokuapp.com/api/users/enroll", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -198,7 +198,7 @@ fetch(`http://localhost:8000/api/courses/${courseId}`)
       if (data.enrollees.length < 1) {
         enrollContainer.innerHTML = "No Enrollees Available";
       } else {
-        fetch("http://localhost:8000/api/users/")
+        fetch("https://murmuring-meadow-95026.herokuapp.com/api/users/")
           .then((res) => res.json())
           .then((users) => {
             data.enrollees.forEach((enrollee) => {

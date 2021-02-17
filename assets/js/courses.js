@@ -14,7 +14,7 @@ if(adminUser === false || adminUser === null){
 	`
 }
 
-fetch('http://localhost:8000/api/courses/')
+fetch('https://murmuring-meadow-95026.herokuapp.com/api/courses/')
 .then(res => res.json()) //string to json
 .then(data => {
 	console.log("array of courses:")

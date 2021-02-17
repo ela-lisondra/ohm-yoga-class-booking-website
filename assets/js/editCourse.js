@@ -8,7 +8,7 @@ let name = document.querySelector("#courseName")
 let price = document.querySelector("#coursePrice")
 let description = document.querySelector("#courseDescription")
 
-fetch(`http://localhost:8000/api/courses/${courseId}`)
+fetch(`https://murmuring-meadow-95026.herokuapp.com/api/courses/${courseId}`)
 .then(res => res.json())
 .then(data => {
 
@@ -33,7 +33,7 @@ document.querySelector("#editCourse").addEventListener("submit", (e) => {
 
 	let token = localStorage.getItem('token')
 
-	fetch('http://localhost:8000/api/courses', {
+	fetch('https://murmuring-meadow-95026.herokuapp.com/api/courses', {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',

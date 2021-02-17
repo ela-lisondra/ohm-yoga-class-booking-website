@@ -14,7 +14,7 @@ loginForm.addEventListener("submit", (e) => {
 		alert("Please input your email and/or password")
 	} else {
 
-		fetch('http://localhost:8000/api/users/login', {
+		fetch('https://murmuring-meadow-95026.herokuapp.com/api/users/login', {
 			method: 'POST',
 			// We use content-type if there's abody in request
 			headers: { 'Content-Type': 'application/json' },
@@ -37,7 +37,7 @@ loginForm.addEventListener("submit", (e) => {
 				localStorage.setItem("token", data.accessToken)
 				// Send a fetch request to decode the JWT and obtain the user ID and is Admin property.
 				// NOTE: GET requests do NOT NEED its method defined in the options
-				fetch('http://localhost:8000/api/users/details', {
+				fetch('https://murmuring-meadow-95026.herokuapp.com/api/users/details', {
 					headers: {
 
 						Authorization: `Bearer ${data.accessToken}`

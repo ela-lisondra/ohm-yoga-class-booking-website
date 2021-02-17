@@ -8,7 +8,7 @@ let editButton = document.querySelector("#editButton");
 
 // console.log(name,desc,userCourses);
 
-fetch(`http://localhost:8000/api/users/details`,{
+fetch(`https://murmuring-meadow-95026.herokuapp.com/api/users/details`,{
 
 	headers: {
 		'Authorization' : `Bearer ${token}`
@@ -50,7 +50,7 @@ fetch(`http://localhost:8000/api/users/details`,{
 		let courseId = course.courseId
 
 
-		fetch(`http://localhost:8000/api/courses/${courseId}`,{
+		fetch(`https://murmuring-meadow-95026.herokuapp.com/api/courses/${courseId}`,{
 
 			headers: {
 				"Content-Type": 'application/json',

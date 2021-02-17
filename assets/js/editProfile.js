@@ -17,7 +17,7 @@ let pwd1 = document.querySelector("#password1")
 let pwd2 = document.querySelector("#password2")
 let password;
 
-fetch(`http://localhost:8000/api/users/details/${userId}`)
+fetch(`https://murmuring-meadow-95026.herokuapp.com/api/users/details/${userId}`)
 .then(res => res.json())
 .then(data => {
 
@@ -54,7 +54,7 @@ fetch(`http://localhost:8000/api/users/details/${userId}`)
     }
 
 
-    fetch('http://localhost:8000/api/users', {
+    fetch('https://murmuring-meadow-95026.herokuapp.com/api/users', {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
