@@ -16,7 +16,7 @@ formSubmit.addEventListener("submit", (e) => {
 
 	console.log(courseName, description, price)
 
-	fetch('http://localhost:8000/api/courses', {
+	fetch('https://murmuring-meadow-95026.herokuapp.com/api/courses', {
 		method: 'POST',
 		headers: {
 

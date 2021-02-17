@@ -1,4 +1,4 @@
-
+console.log("hi register")
 let registerForm = document.querySelector("#registerUser")
 
 // let firstName = document.querySelector("#firstName")
@@ -15,7 +15,7 @@ let registerForm = document.querySelector("#registerUser")
 	// Allows us to add a specific event into an element. This event can trigger a function for our page to do.
 
 // Submit event allows us to submit a form. It's default behaviour is that it sends your form and refreshes the page
-// (e) = event object. Thid event
+// (e) = event object. 
 
 
 registerForm.addEventListener("submit", (e) => {
