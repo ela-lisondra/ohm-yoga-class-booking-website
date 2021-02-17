@@ -72,7 +72,7 @@ fetch(`https://murmuring-meadow-95026.herokuapp.com/api/users/details/${userId}`
     .then(res => res.json())
     .then(data => {
         
-        console.log(data)
+        // console.log(data)
 
         if(data === true){
             

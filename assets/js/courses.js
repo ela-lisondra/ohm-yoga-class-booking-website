@@ -17,8 +17,8 @@ if(adminUser === false || adminUser === null){
 fetch('https://murmuring-meadow-95026.herokuapp.com/api/courses/')
 .then(res => res.json()) //string to json
 .then(data => {
-	console.log("array of courses:")
-	console.log(data)
+	// console.log("array of courses:")
+	// console.log(data)
 
 	// a variable that wil store the data to be rendered
 	let courseData;
@@ -27,7 +27,7 @@ fetch('https://murmuring-meadow-95026.herokuapp.com/api/courses/')
 		courseData = "No courses available at this time."
 	} else {
 		courseData = data.map(course => {
-			console.log(course);
+			// console.log(course);
 			//regular user
 			if(adminUser == false || !adminUser) {
 				if (course.isActive === true) {

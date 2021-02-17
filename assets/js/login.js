@@ -7,8 +7,8 @@ loginForm.addEventListener("submit", (e) => {
 	let email = document.querySelector("#userEmail").value
 	let password = document.querySelector("#password").value
 
-	console.log(email);
-	console.log(password);
+	// console.log(email);
+	// console.log(password);
 
 	if (email == "" || password == ""){
 		alert("Please input your email and/or password")

@@ -12,7 +12,7 @@ fetch(`https://murmuring-meadow-95026.herokuapp.com/api/courses/${courseId}`)
 .then(res => res.json())
 .then(data => {
 
-	console.log(data)
+	// console.log(data)
 
 	name.placeholder = data.name
 	price.placeholder = data.price
@@ -49,7 +49,7 @@ document.querySelector("#editCourse").addEventListener("submit", (e) => {
     .then(res => res.json())
     .then(data => {
         
-    	console.log(data)
+    	// console.log(data)
 
     	//creation of new course successful
     	if(data === true){
@@ -64,24 +64,3 @@ document.querySelector("#editCourse").addEventListener("submit", (e) => {
 
 })
 
-/*let token = localStorage.getItem()
-
-let name = document.querySelector('#name')
-let email = document.querySelector('#email')
-let mobileNo = document.querySelector('#mobileNo')
-
-fetch(, {
-    headers: {
-        'Authorization': `Bearer ${token}`
-    }
-})
-.then(res => res.json())
-.then(data => {
-
-    console.log(data);
-
-    if(data){
-        name.innerHTML = data.name
-    }
-
-})*/

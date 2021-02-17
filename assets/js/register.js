@@ -35,7 +35,7 @@ registerForm.addEventListener("submit", (e) => {
 
 
 	if((password1 !== '' && password2 !== '') && (password1 === password2) && (mobileNumber.length === 11)){
-		console.log("pw1 and pw2 are not blank and matches each other")
+		// console.log("pw1 and pw2 are not blank and matches each other")
 
 		fetch('https://murmuring-meadow-95026.herokuapp.com/api/users/email-exists', {
 			method: 'POST',
@@ -47,7 +47,7 @@ registerForm.addEventListener("submit", (e) => {
 		.then(res => res.json())
 		.then(data => {
 
-			console.log(data)
+			// console.log(data)
 
 			if (data === false) {
 
@@ -65,7 +65,7 @@ registerForm.addEventListener("submit", (e) => {
 				.then(res => res.json())
 				.then(data => {
 
-					console.log(data);
+					// console.log(data);
 
 					if(data === true){
 						alert("registered successfully")
