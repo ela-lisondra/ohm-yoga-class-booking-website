@@ -18,7 +18,7 @@ fetch(`https://murmuring-meadow-95026.herokuapp.com/courses/${courseId}`, {
 .then(data => {
 
 	//creation of new course successful
-    if(data){
+    if(data === true){
         //redirect to courses index page
         window.location.replace('./courses.html')
     } else {
