@@ -23,7 +23,7 @@ h1, h2, footer, #navbar {
 
 #navbar {
 	background-color: #a5a58d;
-	height:12vh;
+	height:10vh;
 	position: sticky;
 	color: #F0E9E4;
 	z-index: 1000;
@@ -114,9 +114,7 @@ h1, h2, footer, #navbar {
 
 }
 
-#reg {
-	background-image: url("assets/pages/yoga-reg.jpg");
-}
+
 
 .middle h2{
 	padding-top: 10px;

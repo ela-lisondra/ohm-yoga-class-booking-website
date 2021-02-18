@@ -33,7 +33,7 @@ fetch('https://murmuring-meadow-95026.herokuapp.com/api/courses/')
 				if (course.isActive === true) {
 					cardFooter = 
 						`
-							<a href="./course.html?courseId=${course._id}" value={course._id} class="btn text-white btn-block editButton">Select Course</a>
+							<a href="./course.html?courseId=${course._id}" value={course._id} class="btn text-white btn-block editButton">Select Class</a>
 						`
 					return(
 						`
