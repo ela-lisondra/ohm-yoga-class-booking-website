@@ -6,7 +6,12 @@
 	line-height: 1.5;
 	font-family: "Lato"
 	color: #20221C;
+	text-align: center;
 	
+}
+
+h1 {
+	font-family: "Cormorant Garamond"
 }
 
 #logo {
@@ -24,7 +29,9 @@
 
 }
 
-
+#link {
+	color: #20221C;
+}
 
 #landing-page {
 	
@@ -63,45 +70,41 @@
 }
 
 .tagline {
-	position:absolute;
-	z-index:999;
-	margin:0 auto;
-	text-align: center;
-	color:  white;
-	font-weight: bold;
-	justify-content: center;
 	align-items: center;
-	font-family: "Lato";
-	font-size: 2.4rem;
-    line-height: 1.5;
-    font-weight: 700;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
+	color:  white;
+	font-family: "Lato";
+	font-size: 2.4rem;
+    font-weight: 700;
+	justify-content: center;
+    line-height: 1.5;
+	margin:0 auto;
+    padding: 2rem 1.2rem;
+	position:absolute;
+	text-align: center;
+	z-index:999;
 	
 }
 
 
 .tagline h1 {
-	padding: 2rem 1.2rem 1.2rem;
 	font-family: "Cormorant Garamond";
 	font-weight: bold;
 	margin: 0 auto;
 }
 
-.tagline p {
-	padding: 0 1.4rem;
-	font-weight: bold;
+.tagline p{
+	font-weight: 500;
 	margin:0 auto;
+	padding: 0 1.4rem;
 }
-.tagline .btn {
 
+.btn {
+  background-color: rgba(43, 45, 37, 0.9);
   border-radius: 25px;
   font-size: 1rem;
   color: white;
-  background-color: rgba(43, 45, 37, 0.9);
- 
-
-
 }
 
 .cards {
@@ -115,7 +118,7 @@
 
 .middle h2{
 	padding-top: 10px;
-	font-family: "Cormorant"
+	font-family: "Cormorant Garamond"
 	font-size:1.2rem;
 
 }
