@@ -93,7 +93,7 @@ fetch(`https://murmuring-meadow-95026.herokuapp.com/api/courses/${courseId}`)
           });
       }
     } else {
-      enrollContainer.innerHTML = `<a href="./register.html" id="enrollButton" class="btn btn-block btn-primary">Enroll</a>`;
+      enrollContainer.innerHTML = `<a href="./register.html" id="enrollButton" class="btn btn-block">Enroll</a>`;
     }
   });
 

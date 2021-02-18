@@ -9,7 +9,7 @@ if(adminUser === false || adminUser === null){
 } else {
 	addButton.innerHTML = `
 		<div class="col-md-2 offset-md-10">
-			<a href="./addCourse.html" class="btn btn-block btn-primary">Add Course</a>
+			<a href="./addCourse.html" class="btn btn-block">Add Course</a>
 		</div>
 	`
 }
@@ -33,7 +33,7 @@ fetch('https://murmuring-meadow-95026.herokuapp.com/api/courses/')
 				if (course.isActive === true) {
 					cardFooter = 
 						`
-							<a href="./course.html?courseId=${course._id}" value={course._id} class="btn btn-primary text-white btn-block editButton">Select Course</a>
+							<a href="./course.html?courseId=${course._id}" value={course._id} class="btn text-white btn-block editButton">Select Course</a>
 						`
 					return(
 						`
