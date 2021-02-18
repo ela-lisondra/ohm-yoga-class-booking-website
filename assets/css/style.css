@@ -10,7 +10,7 @@
 	
 }
 
-h1 {
+h1, h2, footer, #navbar {
 	font-family: "Cormorant Garamond"
 }
 
@@ -26,6 +26,7 @@ h1 {
 	position: sticky;
 	color: #F0E9E4;
 	z-index: 1000;
+
 
 }
 
