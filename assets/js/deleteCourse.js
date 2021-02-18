@@ -8,7 +8,7 @@ let courseId = params.get('courseId')
 
 let token = localStorage.getItem('token')
 
-fetch(`https://murmuring-meadow-95026.herokuapp.com/courses/${courseId}`, {
+fetch(`https://murmuring-meadow-95026.herokuapp.com/api/courses/${courseId}`, {
     method: 'DELETE',
     headers: {
         'Authorization': `Bearer ${token}`
