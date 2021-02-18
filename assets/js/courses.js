@@ -9,7 +9,7 @@ if(adminUser === false || adminUser === null){
 } else {
 	addButton.innerHTML = `
 		<div class="col-md-2 offset-md-10">
-			<a href="./addCourse.html" class="btn btn-block">Add Course</a>
+			<a href="./addCourse.html" class="btn btn-block">Add Class</a>
 		</div>
 	`
 }
