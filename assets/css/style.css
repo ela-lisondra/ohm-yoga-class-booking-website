@@ -4,13 +4,13 @@
 	padding: 0;
 	box-sizing: border-box;
 	line-height: 1.5;
-	font-family: "Lato"
+	font-family: "Lato";
 	color: #20221C;
 	text-align: center;
 	
 }
 
-h1, h2, footer, #navbar {
+h1, h2  {
 	font-family: "Cormorant Garamond";
 	font-weight: bold;
 }
@@ -23,6 +23,7 @@ h1, h2, footer, #navbar {
 
 #navbar {
 	background-color: #a5a58d;
+	font-family: "Cormorant Garamond";
 	height:10vh;
 	position: sticky;
 	color: #F0E9E4;
@@ -118,8 +119,8 @@ h1, h2, footer, #navbar {
 
 .middle h2{
 	padding-top: 10px;
-	font-family: "Cormorant Garamond"
-	font-size:1.2rem;
+	font-family: "Cormorant Garamond";
+	font-size: 1.2rem;
 	font-weight: bold;
 
 }
@@ -128,6 +129,7 @@ footer {
 	background-color: #F0E9E4;
 	color: #a5a58d;
 	display: flex;
+	font-family: "Cormorant Garamond";
 	justify-content: flex-end;	
 	text-align: center;
 	margin-top: 20px;

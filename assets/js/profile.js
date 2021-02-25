@@ -29,7 +29,7 @@ fetch(`https://murmuring-meadow-95026.herokuapp.com/api/users/details`,{
 		editButton.innerHTML = 
 								`
 									<div class="col-md-2 offset-md-10">
-										<a href="./editProfile.html?userId=${data._id}" value="{data._id}" class="btn btn-block btn-outline-info">Edit Profile</a>
+										<a href="./editProfile.html?userId=${data._id}" value="{data._id}" class="btn">Edit Profile</a>
 									</div>
 								`;
 	} else {

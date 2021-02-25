@@ -40,7 +40,7 @@ fetch(`https://murmuring-meadow-95026.herokuapp.com/api/courses/${courseId}`)
     coursePrice.innerHTML = data.price;
     console.log(data);
     if (adminUser == "false" && token != null) {
-      enrollContainer.innerHTML = `<button id="enrollButton" class="btn btn-block btn-primary">Enroll</button>`;
+      enrollContainer.innerHTML = `<button id="enrollButton" class="btn btn-block">Enroll</button>`;
 
       document.querySelector("#enrollButton").addEventListener("click", () => {
         // add fetch request to enroll our user:
