@@ -4,7 +4,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	line-height: 1.5;
-	font-family: "Lato";
+	font-family: "Lato";	
 	color: #20221C;
 	text-align: center;
 	
@@ -25,7 +25,7 @@ h1, h2  {
 	background-color: #a5a58d;
 	font-family: "Cormorant Garamond";
 	height:10vh;
-	position: sticky;
+	/* position: sticky; */
 	color: #F0E9E4;
 	z-index: 1000;
 
@@ -36,7 +36,6 @@ h1, h2  {
 }
 
 #landing-page {
-	
 	height: 80vh;
     font-family: "Lato";
     position: relative;     
@@ -59,11 +58,9 @@ h1, h2  {
   min-width: 100%; 
   min-height: 100%; 
   z-index: -1;
-
   /* Setting width & height to auto prevents the browser from stretching or squishing the video */
   width: auto;
   height: auto;
-
   /* Center the video */
   position: absolute;
   top: 50%;
